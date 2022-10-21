@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JMFG Family Tree</title>
+    <link rel="stylesheet" href="./css/tree_maker-min.css" />
+    <script type="text/javascript" src="./scripts/tree_maker-min.js"></script>
+    <link href="./css/images/family_tree_logo.png" rel="icon" />
+  </head>
+  <body>
+    <img class="center" src="./css/images/tree_logo1.png"/ style="width: 20%;">
+    <div id="my_tree" onclick="display(params)"></div>
+    <script type="text/javascript">
+      let tree = {
+        1: {
+          2: {
+            4: {
+              8: "",
+              9: "",
+            },
+            5: {
+              10: "",
+              11: "",
+            },
+          },
+          3: {
+            6: {
+              12: "",
+              13: "",
+            },
+            7: {
+              14: "",
+              15: "",
+            },
+          },
+        },
+      };
+
+      let params = {
+        1: { trad: "Jude Michael Felipe Gatchalian" },
+        2: { trad: "Maria Ana Hernandez Felipe" },
+        3: { trad: "Michael Robles Gatchalian" },
+        4: { trad: "Ester Hernandez" },
+        5: { trad: "Edilberto Felipe" },
+        6: { trad: "Violeta Robles" },
+        7: { trad: "Rolando Gatchalian" },
+        8: { trad: "Soledad Hernandez" },
+        9: { trad: "Elpidio Hernandez" },
+        10: { trad: "Felicidad Felipe" },
+        11: { trad: "Federico Felipe" },
+        12: { trad: "Amado Robles" },
+        13: { trad: "Miguel Robles" },
+        14: { trad: "? Gatchalian" }, //not accidental, father doesn't recollect ever meeting his grandparents on his father side
+        15: { trad: "? Gatchalian" },
+      };
+
+      treeMaker(tree, {
+        id: "my_tree",
+        card_click: function (element) {
+          console.log(element);
+        },
+        treeParams: params,
+        link_width: "1px",
+        link_color: "#f0f3f9",
+      });
+    </script>
+  </body>
+</html>

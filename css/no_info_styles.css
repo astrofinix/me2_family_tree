@@ -1,0 +1,36 @@
+body {
+  background-color: black;
+  background-image: url(./images/no_info_glow.png);
+  background-attachment: fixed;
+  background-position: right;
+}
+button {
+  position: relative;
+  border-radius: 21px;
+  background-color: rgb(68, 143, 163);
+  width: 200px;
+  height: 50px;
+  z-index: 10;
+  left: 100px;
+  top: 50px;
+}
+button:hover {
+  position: relative;
+  border-radius: 21px;
+  background-color: rgb(94, 94, 94);
+  width: 200px;
+  height: 50px;
+  z-index: 10;
+  left: 100px;
+  top: 50px;
+}
+button:active {
+  position: relative;
+  border-radius: 21px;
+  background-color: rgb(68, 143, 163);
+  width: 200px;
+  height: 50px;
+  z-index: 10;
+  left: 100px;
+  top: 50px;
+}

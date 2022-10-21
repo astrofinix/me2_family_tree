@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700&display=swap');
+body {
+  background-color: black;
+  background-image: url(./images/upper_glow_bg.png);
+  background-attachment: fixed;
+  background-position: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#from_tree__container__step__card__first,
+.tree__container,
+.tree__container__branch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.tree__container__step__card {
+  text-align: center;
+  margin: 20px;
+}
+.tree__container__step__card p {
+  font-size: 15px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: rgb(244, 244, 249);
+  padding: 10px;
+  /* box-shadow:0 0 4px 1px rgba(121,121,121,.3); */
+  border-radius: 15px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  margin: 0 !important;
+}
+.tree__container__step__card p:hover {
+  font-size: 15px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: rgb(244, 244, 249);
+  padding: 10px;
+  box-shadow: 0 0 4px 1px rgba(121, 121, 121, 0.3);
+  border-radius: 15px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  margin: 0 !important;
+}
+.tree__container__step__card p:active {
+  font-size: 15px;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: rgb(244, 244, 249);
+  padding: 10px;
+  box-shadow: 0 0 4px 1px rgba(121, 121, 121, 0.3);
+  border-radius: 15px;
+  text-align: center;
+  width: 150px;
+  display: inline-block;
+  margin: 0 !important;
+  background-color: #448fa3;
+  border-color: rgb(240, 243, 249);
+  border-style: solid;
+  border-width: 2px;
+}
+#tree__svg-container {
+  z-index: -1;
+  position: absolute;
+}
+.tree__container__step {
+  flex: 1 1 0px;
+  width: auto;
+  padding: 0;
+}
+.tree__container__step__card__p {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.logo {
+  align-items: center;
+}
+.female_surname {
+  color: #0197f6;
+}
+.male_surname {
+  color: #fe5d26;
+}
+.first_name {
+  color: white;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/info_styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/images/family_tree_logo.png" rel="icon" />
+    <title>JMFG Family Tree</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./css/images/tree_logo_info.png" class="logo" />
+      <div>
+        <span class="child" id="name">check</span>
+      </div>
+      <table class="outer_table">
+        <tbody>
+          <tr>
+            <td>
+      <table class="inner_table">
+                <tbody>
+                  <tr>
+                    <td class="label">Generation</td>
+                    <td><span id="generation" class="info"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Status</td>
+                    <td><span id="status" class="info"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Birthday</td>
+                    <td><span id="birth" class="info"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Historical Experiences</td>
+                    <td><span id="histo_exp" class="info"></span></td>
+                  </tr>
+                  <tr>
+                    <td class="label">Anecdote</td>
+                    <td><span id="anecdote" class="info"></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button onclick="returnHome()">Return to Homepage</button>
+    </div>
+  </body>
+  <script type="text/javascript" src="./scripts/display_data.js"></script>
+</html>
